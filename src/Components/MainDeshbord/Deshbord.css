@@ -1,0 +1,14 @@
+.card-icon {
+    position: absolute;
+    top: -25px; 
+    left: 20%;
+    transform: translateX(-50%);
+    width: 50px; 
+    height: 50px; 
+    background-color: #fff;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
