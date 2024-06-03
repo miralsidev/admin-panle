@@ -21,7 +21,7 @@ function User() {
       <div className="container-fluid py-4">
         <div className="row">
           <div className="col-12">
-            <div className="card my-4" >
+            <div className="card my-4" style={{boxShadow:"0 4px 8px 0 rgba(109, 74, 85, 0.2), 0 6px 20px 0 rgba(109, 74, 85, 0.19)"}} >
             <div className="card-header p-0 position-relative mt-n4 mx-3 z-index-2" style={{ top: "-25px", marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
               <div className=" shadow-primary rounded-3 pt-4 pb-3" style={{ backgroundColor: '#6D4A56' }}>
                 <h6 className="text-white text-capitalize ps-3 fs-5">

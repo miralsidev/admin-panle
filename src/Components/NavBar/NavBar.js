@@ -7,10 +7,10 @@ import TextField from '@mui/material/TextField'; // Make sure to import TextFiel
 function NavBar() {
     return (
         <>
-            <div className='' style={{ position: 'sticky', top: 0, zIndex: 2 }}>
-                <Navbar className='m-3 rounded-3' style={{ backgroundColor: '#6D4A56' }}>
+            <div className='' style={{ position: 'sticky', top: 0, zIndex: 2 ,boxShadow:"0 4px 8px 0 rgba(109, 74, 85, 0.2), 0 4px 8px 0 rgba(109, 74, 85, 0.2)"}}>
+                <Navbar className='m-3 rounded-3'>
                     <Container>
-                        <Navbar.Brand href="#home" style={{ color: 'white' }}>
+                        <Navbar.Brand href="#home" >
                             Deshbord
                         </Navbar.Brand>
                   
