@@ -15,5 +15,4 @@ const Protecter = ({ Component }) => {
         </div>
     )
 }
-
 export default Protecter

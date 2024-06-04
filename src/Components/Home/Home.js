@@ -20,7 +20,7 @@ function Home() {
     backgroundColor:'rgb(109, 74, 86)',
     borderColor: 'rgb(109, 74, 86)',
     
-  };
+  };  
 
   return (
     <>
@@ -82,6 +82,15 @@ function Home() {
                   >
                     <i className="fas fa-lock fa-fw me-3"></i>
                     <span>Add Blogs</span>
+                  </NavLink>
+                  <NavLink
+                    to="Contact"
+                    className="list-group-item list-group-item-action py-2 ripple"
+                    style={({ isActive }) => isActive ? activeStyle : undefined}
+                    onClick={handleClose}
+                  >
+                    <i className="fas fa-lock fa-fw me-3"></i>
+                    <span>Contact Details</span>
                   </NavLink>
                 </div>
               </Box>
@@ -147,6 +156,15 @@ function Home() {
               <i className="fas fa-lock fa-fw me-3"></i>
               <span>Add Blogs</span>
             </NavLink>
+            <NavLink
+                    to="Contact"
+                    className="list-group-item list-group-item-action py-2 ripple"
+                    style={({ isActive }) => isActive ? activeStyle : undefined}
+                    onClick={handleClose}
+                  >
+                    <i className="fas fa-lock fa-fw me-3"></i>
+                    <span>Contact Details</span>
+                  </NavLink>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

@@ -171,46 +171,49 @@ const Contact = () => {
 
     return (
         <>
-            <div className="input-group mb-3">
-                <input 
-                    type="text" 
-                    className="form-control" 
-                    placeholder="Search contacts" 
-                    aria-label="Recipient's username" 
-                    aria-describedby="basic-addon2"
-                    value={searchTerm}
-                    onChange={e => setSearchTerm(e.target.value)}
-                />
-                <div className="input-group-append">
-                    <button className="btn btn-outline-secondary" type="button">Search</button>
+            <div style={{overflowX:'auto'}}>
+                <div className="input-group mb-3">
+                    <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Search contacts"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                        value={searchTerm}
+                        onChange={e => setSearchTerm(e.target.value)}
+                    />
+                    {/* <div className="input-group-append">
+                        <button className="btn btn-outline-secondary" type="button">Search</button>
+                    </div> */}
                 </div>
-            </div>
-            <IsEmpty
-                value={filteredContacts}
-                yes={() => "Empty list"}
-                no={() => (
-                    <table className="table table-bordered" style={{ overflowX: 'auto' }}>
-                        <thead>
-                            <tr>
-                                <th>No</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Email</th>
-                                <th scope="col">Message</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <Map collection={filteredContacts} iteratee={(contact, index) => (
-                                <tr key={index}>
-                                    <td>{index + 1}</td>
-                                    <td>{contact.Name}</td>
-                                    <td>{contact.Email}</td>
-                                    <td>{contact.Message}</td>
+                <IsEmpty
+                    value={filteredContacts}
+                    yes={() => "Empty list"}
+                    no={() => (
+                        <table className="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Email</th>
+                                    <th scope="col">Message</th>
                                 </tr>
-                            )} />
-                        </tbody>
-                    </table>
-                )}
-            />
+                            </thead>
+                            <tbody>
+                                <Map collection={filteredContacts} iteratee={(contact, index) => (
+                                    <tr key={index}>
+                                        <td>{index + 1}</td>
+                                        <td>{contact.Name}</td>
+                                        <td>{contact.Email}</td>
+                                        <td>{contact.Message}</td>
+                                    </tr>
+                                )} />
+                            </tbody>
+                        </table>
+                    )}
+                />
+            </div>
+
         </>
     );
 };

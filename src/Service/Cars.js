@@ -14,5 +14,4 @@ export const viewData = (carId) => {
 }
 export const deleteData = (carId)=>{
     return axios.delete(`http://localhost:5000/cars/deleteCars/${carId}`)
-
 }

@@ -1,3 +1,4 @@
+
 import './App.css';
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from './Components/Home/Home';
@@ -11,7 +12,6 @@ import CarsForm from './Components/Cars/CarsForm';
 import BlogForm from './Components/Blog/BlogForm';
 import Contact from './Components/Contact/Contact';
 
-
 function App() {
   return (
     <>
@@ -20,22 +20,18 @@ function App() {
           <Route path="deshbord" element={<Protecter Component={Deshbord} />} />
           <Route path="user" element={<Protecter Component={User} />} />
           {/* <Route path="user" element={<User />} /> */}
-          <Route path="home" element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="cars" element={<Cars />} />
+          <Route path="home" element={<Protecter Component={Home} />} />
+          <Route path="blogs" element={<Protecter Component={Blogs} />} />
+          <Route path="cars" element={<Protecter Component={Cars} />} />
           <Route path="*" element={<Navigate to="deshbord" />} />
-          <Route path='CarsForm' element={<CarsForm />} />
-          <Route path='BlogForm' element={<BlogForm />} />
-          <Route path='Contact' element={<Contact />} />
+          <Route path='CarsForm' element={<Protecter Component={CarsForm} />} />
+          <Route path='BlogForm' element={<Protecter Component={BlogForm} />} />
+          <Route path='Contact' element={<Protecter Component={Contact} />} />
         </Route>
         <Route path="/login" element={<Login />} />
-
       </Routes>
     </>
   );
 }
 
 export default App;
-
-
-
