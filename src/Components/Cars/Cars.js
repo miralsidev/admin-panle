@@ -50,7 +50,7 @@ const Cars = () => {
     console.log(res, "--> res");
   };
 
-  const DeleteData = async (id) => {
+  const   DeleteData = async (id) => {
     try {
       const response = await deleteData(id);
       console.log(response);
