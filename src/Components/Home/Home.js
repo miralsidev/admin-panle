@@ -17,10 +17,10 @@ function Home() {
   const handleShow = () => setShow(true);
 
   const activeStyle = {
-    backgroundColor:'rgb(109, 74, 86)',
+    backgroundColor: 'rgb(109, 74, 86)',
     borderColor: 'rgb(109, 74, 86)',
-    
-  };  
+
+  };
 
   return (
     <>
@@ -92,6 +92,15 @@ function Home() {
                     <i className="fas fa-lock fa-fw me-3"></i>
                     <span>Contact Details</span>
                   </NavLink>
+                  <NavLink
+                    to="Payment"
+                    className="list-group-item list-group-item-action py-2 ripple"
+                    style={({ isActive }) => isActive ? activeStyle : undefined}
+                    onClick={handleClose}
+                  >
+                    <i className="fas fa-lock fa-fw me-3"></i>
+                    <span>Payment Details</span>
+                  </NavLink>
                 </div>
               </Box>
             </div>
@@ -157,14 +166,23 @@ function Home() {
               <span>Add Blogs</span>
             </NavLink>
             <NavLink
-                    to="Contact"
-                    className="list-group-item list-group-item-action py-2 ripple"
-                    style={({ isActive }) => isActive ? activeStyle : undefined}
-                    onClick={handleClose}
-                  >
-                    <i className="fas fa-lock fa-fw me-3"></i>
-                    <span>Contact Details</span>
-                  </NavLink>
+              to="Contact"
+              className="list-group-item list-group-item-action py-2 ripple"
+              style={({ isActive }) => isActive ? activeStyle : undefined}
+              onClick={handleClose}
+            >
+              <i className="fas fa-lock fa-fw me-3"></i>
+              <span>Contact Details</span>
+            </NavLink>
+            <NavLink
+              to="Payment"
+              className="list-group-item list-group-item-action py-2 ripple"
+              style={({ isActive }) => isActive ? activeStyle : undefined}
+              onClick={handleClose}
+            >
+              <i className="fas fa-lock fa-fw me-3"></i>
+              <span>Payment Details</span>
+            </NavLink>
           </div>
         </Offcanvas.Body>
       </Offcanvas>

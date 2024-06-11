@@ -11,6 +11,7 @@ import Protecter from './Components/Protected/Protecter';
 import CarsForm from './Components/Cars/CarsForm';
 import BlogForm from './Components/Blog/BlogForm';
 import Contact from './Components/Contact/Contact';
+import Payment from './Components/Payment/Payment';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='CarsForm' element={<Protecter Component={CarsForm} />} />
           <Route path='BlogForm' element={<Protecter Component={BlogForm} />} />
           <Route path='Contact' element={<Protecter Component={Contact} />} />
+          <Route path='Payment' element={<Protecter Component={Payment} />} />
         </Route>
         <Route path="/login" element={<Login />} />
       </Routes>

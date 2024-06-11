@@ -80,7 +80,6 @@ const Cars = () => {
 
               </span>
             </div>
-       
 
             {cars ? (
               <div className="table-container" style={{ overflowX: "auto" }}>
@@ -113,7 +112,7 @@ const Cars = () => {
                           <img
                             src={`http://localhost:5000/${cars.path}`}
                             alt={`car-${index}`}
-                            style={{ width: "60px", height: "50px" }}
+                            style={{ width: "100px", height: "100px" }}
                           />
                         </td>
                         <td>{cars.model}</td>
